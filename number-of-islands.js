@@ -1,3 +1,8 @@
+
+// loosely based on https://www.youtube.com/watch?v=R4Nh-EgWjyQ
+// and also a solution from the comments:
+// https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1374/discuss/166722/Java-recursive-easy-to-understand-with-comments
+
 var createIsland = function(grid, row, col) {
     if(row < 0 || col < 0 || row >= grid.length || col >= grid[row].length) {
         return 0;
