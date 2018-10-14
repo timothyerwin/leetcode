@@ -13,12 +13,16 @@ var setZeroes = function(matrix) {
             if(matrix[r][c] === 0) {
                 // zero out the row
                 for(let c0 = 0; c0 < matrix[0].length; c0++) {
-                   targets.push([r, c0]);
+                    if(matrix[r][c0] !== 0){
+                       targets.push([r, c0]);
+                    }
                 }
                 
                 // zero out the column
                 for(let r0 = 0; r0 < matrix.length; r0++) {
-                    targets.push([r0, c]);
+                    if(matrix[r0][c] !== 0){
+                       targets.push([r0, c]);
+                    }
                 }
             }
         }
